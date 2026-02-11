@@ -1,7 +1,7 @@
 # Ahmed Khaled | Full Stack Developer Portfolio
 
 ## 🚀 Live Demo
-🔗 **[View Live Portfolio](#)** *(Add your deployment link here)*
+🔗 **[View Live Portfolio](#)** *(https://a7medk7.github.io/A7K_Portfolio/)*
 
 ## ✨ Features
 
