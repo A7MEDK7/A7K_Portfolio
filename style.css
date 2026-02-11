@@ -1,0 +1,230 @@
+/* Setup Color  */
+:root {
+    --primary: #001ecb;
+    --primary-light: #2877ff;
+    --primary-dark: #00236a;
+    --background: #0b0f14;
+    --card: #111117;
+    --muted: #1a1a1a;
+    --border: #2a2a2a;
+    --text-primary: #f8fafc;
+    --text-secondary: #eee;
+    --foreground: #e2e8f0;
+    --Gray-Color: #8b949e;
+}
+
+.bg-background {
+    background-color: var(--background);
+}
+
+.bg-card {
+    background-color: var(--card);
+}
+
+.bg-muted {
+    background-color: var(--muted);
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-primary-light {
+    background-color: var(--primary-light);
+}
+
+.bg-primary-dark {
+    background-color: var(--primary-dark);
+}
+
+.text-text-primary {
+    color: var(--text-primary);
+}
+
+.text-text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-primary-light {
+    color: var(--primary-light);
+}
+
+.text-primary-dark {
+    color: var(--primary-dark);
+}
+
+.gray-color {
+    color: var(--Gray-Color)
+}
+
+.border-border {
+    border-color: var(--border);
+}
+
+.border-primary {
+    border-color: var(--primary);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+
+.typing-container {
+    height: 60px;
+    position: relative;
+}
+
+.typing-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Gray-Color);
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: var(--primary);
+    margin-left: 2px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.light-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(30, 64, 175, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar {
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.floating-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-light);
+}
+
+.gradient-name {
+    color: transparent;
+    background: linear-gradient(to right, var(--primary-light), var(--primary), #1c005e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.text-primary {
+    color: var(--primary-light);
+    background: linear-gradient(to right, var(--primary-light), var(--primary), #6421ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    position: absolute;
+    left: -40px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    background: var(--primary-dark);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #131baf40;
+}
+
+/* Meta info */
+.meta {
+    display: flex;
+    gap: 20px;
+    font-size: 0.875rem;
+    margin-top: 6px;
+    color: #9ca3af;
+}
+
+.meta i {
+    color: var(--primary-dark);
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.meta span:hover i {
+    color: var(--primary);
+}
