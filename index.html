@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Ahmed Khaled</title>
+    <meta name="theme-color" content="#05070f">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Apply saved theme before first paint (no flash) -->
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) { }
+            if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', t);
+            document.documentElement.classList.add('js');
+        })();
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Liquid background -->
+    <div class="bg-stage" aria-hidden="true">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar glass">
+        <div class="nav-row">
+            <a href="#home" class="logo">Ahmed.</a>
+
+            <div class="nav-links">
+                <span class="nav-indicator" aria-hidden="true"></span>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-tools">
+                <div class="nav-social">
+                    <a href="https://github.com/A7MEDK7" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-khaled-6b86042ab" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:ahmed.khaled2005.dev@gmail.com" class="icon-btn" aria-label="Email"><i class="far fa-envelope"></i></a>
+                </div>
+                <button id="theme-toggle" class="switch" role="switch" aria-checked="true" aria-label="Dark mode"><i class="fas fa-sun sw-sun"></i><i class="fas fa-moon sw-moon"></i><span class="knob"></span></button>
+                <button id="mobile-menu-btn" class="icon-btn menu-btn" aria-label="Menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"><div class="menu-inner">
+            <span class="nav-indicator" aria-hidden="true"></span>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div></div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="wrap hero-grid">
+            <div class="hero-photo reveal">
+                <div class="photo-frame">
+                    <div class="photo glass">
+                        <img src="images/Hero_Image.jpg" alt="Ahmed-Khaled">
+                    </div>
+                    <div class="float-icon i1 glass"><i class="fas fa-code"></i></div>
+                    <div class="float-icon i2 glass"><i class="fas fa-cube"></i></div>
+                    <div class="float-icon i3 glass"><i class="fas fa-bolt"></i></div>
+                </div>
+            </div>
+
+            <div class="hero-copy reveal">
+                <span class="status glass"><span class="ping"></span>Available for Freelance Work</span>
+                <h1>Hi, I'm <span class="grad">Ahmed Khaled</span></h1>
+                <div class="typing-text"><span id="typed-text"></span><span class="cursor"></span></div>
+                <p class="lead">Full-Stack Developer Specializing In React.js &amp; .NET Core, Building Responsive Applications With Performance And Scalability In Mind.</p>
+
+                <div class="btn-row">
+                    <a href="#projects" class="btn btn-primary glass">View My Work</a>
+                    <a href="#contact" class="btn glass">Contact Me</a>
+                </div>
+
+                <div>
+                    <p class="tech-label">Technology I Work With:</p>
+                    <div class="tech-row">
+                        <span class="chip glass"><i class="fab fa-js" style="color:#facc15"></i>JavaScript</span>
+                        <span class="chip glass"><i class="fab fa-react"></i>React</span>
+                        <span class="chip glass"><img src="images/TAILWIND.jpg" alt="Tailwind">Tailwind CSS</span>
+                        <span class="chip glass"><img src="images/DOTNET.jpg" alt="dotnet">.NET Core</span>
+                        <span class="chip glass"><img src="images/SQLSERVER.jpg" alt="sqlserver">SQL Server</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <h2>About <span class="grad">Me</span></h2>
+                <p>Transform Complex Problems Into Elegant Digital Solutions With Building Scalable Web Applications With modern Full-Stack Technologies.</p>
+            </div>
+
+            <div class="about-card glass reveal">
+                <div class="about-img"><img src="images/Secondary_Image.jpg" alt="Ahmed-Khaled"></div>
+                <div class="about-text">
+                    <p class="big">I'm A <b class="grad">Full-Stack Developer</b> Focused On Building Fast, Scalable, And User-Friendly Web Applications.</p>
+                    <p>I Work Mainly With <strong>React.js</strong> On The Front-End And <strong>.NET Core</strong> On The Back-End, With Strong Experience In C#, ASP.NET Core, RESTful APIs, Microservices And SQL Server.</p>
+                    <p>I follow clean architecture principles and apply <strong>OOP</strong> and <strong>SOLID</strong> to deliver maintainable and high-quality code.</p>
+                </div>
+            </div>
+
+            <h3 class="sub reveal">Personal Info</h3>
+            <div class="info-grid reveal">
+                <div class="info glass lift">
+                    <div class="orb"><i class="fas fa-user"></i></div>
+                    <div><small>Name</small><p>Ahmed Khaled Ibrahim</p></div>
+                </div>
+                <div class="info glass lift">
+                    <div class="orb"><i class="fas fa-envelope"></i></div>
+                    <div><small>Email</small><p class="email">ahmed.khaled2005.dev@gmail.com</p></div>
+                </div>
+                <div class="info glass lift">
+                    <div class="orb"><i class="fas fa-map-marker-alt"></i></div>
+                    <div><small>Location</small><p>6th October, Egypt</p></div>
+                </div>
+                <div class="info glass lift">
+                    <div class="orb"><i class="fas fa-bullseye"></i></div>
+                    <div><small>Status</small><p>Open to opportunities</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <h2>My <span class="grad">Skills</span></h2>
+                <p>I've worked with a variety of technologies in front-end development. Here are some of my key areas of expertise:</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="card skill glass lift reveal">
+                    <i class="fab fa-react"></i>
+                    <h3>Front-End Development</h3>
+                    <p>Building responsive and optimized web applications with modern frameworks.</p>
+                    <div class="tags">
+                        <span class="tag"><i class="fab fa-html5"></i>HTML5</span>
+                        <span class="tag"><i class="fab fa-css3-alt"></i>CSS3</span>
+                        <span class="tag"><i class="fab fa-js"></i>JavaScript</span>
+                        <span class="tag"><i class="fab fa-react"></i>React</span>
+                        <span class="tag"><i class="fas fa-bolt"></i>Next.js</span>
+                        <span class="tag"><i class="fa-brands fa-bootstrap"></i>Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="card skill glass lift reveal">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Styling &amp; UI Frameworks</h3>
+                    <p>Crafting modern and maintainable UI components with efficient styling techniques.</p>
+                    <div class="tags">
+                        <span class="tag"><i class="fa-brands fa-tailwind-css"></i>Tailwind CSS</span>
+                        <span class="tag"><i class="fab fa-css3-alt"></i>CSS Modules</span>
+                        <span class="tag"><i class="fas fa-palette"></i>Styled Components</span>
+                    </div>
+                </div>
+
+                <div class="card skill glass lift reveal">
+                    <i class="fas fa-server"></i>
+                    <h3>Back-End Integration</h3>
+                    <p>Connecting front-end applications to databases and back-end services.</p>
+                    <div class="tags">
+                        <span class="tag"><i class="fas fa-database"></i>SQL Server</span>
+                        <span class="tag"><i class="fas fa-code"></i>C#</span>
+                        <span class="tag"><i class="fas fa-code"></i>ASP.NET</span>
+                        <span class="tag"><i class="fas fa-code"></i>LINQ</span>
+                        <span class="tag"><i class="fas fa-terminal"></i>RESTful APIs</span>
+                    </div>
+                </div>
+
+                <div class="card skill glass lift reveal">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Version Control &amp; Deployment</h3>
+                    <p>Managing code collaboration and deploying applications efficiently.</p>
+                    <div class="tags">
+                        <span class="tag"><i class="fa-brands fa-postman"></i>Postman</span>
+                        <span class="tag"><i class="fa-brands fa-git-alt"></i>git</span>
+                        <span class="tag"><i class="fa-brands fa-github"></i>Github</span>
+                        <span class="tag"><i class="fa-brands fa-docker"></i>Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="sub reveal">Development Philosophy</h3>
+            <div class="philo-grid reveal">
+                <div class="philo glass lift">
+                    <h4><span class="orb"><i class="fas fa-tachometer-alt"></i></span>Performance First</h4>
+                    <p>Optimized, scalable, and lightning-fast applications.</p>
+                </div>
+                <div class="philo glass lift">
+                    <h4><span class="orb"><i class="fas fa-universal-access"></i></span>Accessibility Matters</h4>
+                    <p>Building for everyone, regardless of ability.</p>
+                </div>
+                <div class="philo glass lift">
+                    <h4><span class="orb"><i class="fas fa-code"></i></span>Clean Code</h4>
+                    <p>Applying SOLID principles, design patterns, and maintainable code practices.</p>
+                </div>
+                <div class="philo glass lift">
+                    <h4><span class="orb"><i class="fas fa-user-friends"></i></span>Secure &amp; Scalable</h4>
+                    <p>Building secure APIs with JWT authentication and scalable database design.</p>
+                </div>
+            </div>
+
+            <h3 class="sub reveal">Technical Expertise</h3>
+            <div class="tags big reveal">
+                <span class="tag">SOLID Principles</span>
+                <span class="tag">Design Patterns</span>
+                <span class="tag">Clean Architecture</span>
+                <span class="tag">MVC Architecture</span>
+                <span class="tag">Onion Architecture</span>
+                <span class="tag">OOP &amp; Data Structures</span>
+                <span class="tag">SignalR / JWT / Caching</span>
+                <span class="tag">FluentValidation / AutoMapper</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <h2>Recently <span class="grad">Projects</span></h2>
+                <p>Explore my latest work where creativity meets functionality through modern web technologies</p>
+            </div>
+
+            <div class="projects">
+                <article class="project glass reveal">
+                    <div class="project-img">
+                        <img src="images/RentExpress.png" alt="RentExpress">
+                        <span class="project-num glass">01</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="kicker">FEATURED PROJECT</span>
+                        <h3>Rent Express</h3>
+                        <p>Responsive car rental web application and Dark mode with theme switching, Real-time search &amp; favorites system In Modern UI/UX with interactive features</p>
+                        <div class="tags" style="justify-content:flex-start">
+                            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript (ES6+)</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://a7medk7.github.io/RentXpress/index.html" target="_blank" rel="noopener" class="btn btn-primary glass"><i class="fas fa-external-link-alt"></i>View Live</a>
+                            <a href="https://github.com/A7MEDK7/RentXpress" target="_blank" rel="noopener" class="btn glass"><i class="fab fa-github"></i>Source Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project rev glass reveal">
+                    <div class="project-img">
+                        <img src="images/E-Commerce.jpg" alt="E-Commerce">
+                        <span class="project-num glass">02</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="kicker">FEATURED PROJECT</span>
+                        <h3>E-Commerce APIs</h3>
+                        <p>A full-featured E-Commerce RESTful API built with ASP.NET Core, designed using Onion Architecture and modern backend best practices. This project documents the complete backend journey — from architecture decisions to advanced modules like Specifications, Authentication, Caching, and Payments.</p>
+                        <div class="tags" style="justify-content:flex-start">
+                            <span class="tag">ASP.NET Core</span><span class="tag">C#</span><span class="tag">Entity Framework Core</span><span class="tag">SQL Server</span><span class="tag">Redis DB</span><span class="tag">LINQ</span><span class="tag">JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/A7MEDK7/My_E-Commerce.APIs" target="_blank" rel="noopener" class="btn glass"><i class="fab fa-github"></i>Source Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship & Education -->
+    <section id="experience-education">
+        <div class="wrap tl-grid">
+            <div class="tl glass reveal">
+                <h2><i class="fa-solid fa-briefcase"></i>Internship</h2>
+                <div class="timeline">
+                    <div class="tl-item">
+                        <span class="tl-dot"></span>
+                        <h3>BackEnd ASP.NET</h3>
+                        <p class="tl-org">Route Academy</p>
+                        <div class="meta">
+                            <span><i class="fa-solid fa-location-dot"></i>Egypt</span>
+                            <span><i class="fa-solid fa-calendar-days"></i>May 2025 - Nov 2025</span>
+                        </div>
+                        <ul>
+                            <li>Completed a 6-month intensive diploma in ASP.NET Core and SQL Server.</li>
+                            <li>Gained strong knowledge in database design, C#, OOP, and LINQ.</li>
+                            <li>Hands-on experience with EF Core, Dapper, MVC, and RESTful APIs.</li>
+                            <li>Applied advanced concepts like Authentication, Payment Integration, SignalR, Caching, and Design Patterns.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tl glass reveal">
+                <h2><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+                <div class="timeline">
+                    <div class="tl-item">
+                        <span class="tl-dot"></span>
+                        <h3>Bachelor's Degree in Computer Science <span>(In Progress)</span></h3>
+                        <p class="tl-org">Faculty of Computers and Information</p>
+                        <div class="meta">
+                            <span><i class="fa-solid fa-location-dot"></i>Menoufia University, Egypt</span>
+                            <span><i class="fa-solid fa-calendar-days"></i>Sep 2023 - Jun 2027 (Expected)</span>
+                        </div>
+                        <p>Currently studying computer science with a focus on full-stack development, web technologies, and modern frameworks. Working on various academic projects related to web applications and AI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <h2>Plans <span class="grad">&amp; Pricing</span></h2>
+                <p>Choose the plan that best fits your project and let's build something amazing together.</p>
+                <p class="price-note">Prices may vary depending on project scope (Hosting &amp; Domain not included).</p>
+            </div>
+
+            <div class="price-grid">
+                <div class="plan glass lift reveal">
+                    <div class="plan-icon"><i class="fa-brands fa-html5"></i></div>
+                    <h3>Starter Website</h3>
+                    <p class="desc">One-page responsive landing site to get your business online.</p>
+                    <div class="price grad">Starting From $50</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Single Landing Page</li>
+                        <li><i class="fas fa-check"></i>Responsive Design (Mobile-Friendly)</li>
+                        <li><i class="fas fa-check"></i>Fast Loading Speed</li>
+                        <li><i class="fas fa-check"></i>Delivery Within 5 Days</li>
+                        <li><i class="fas fa-check"></i>1 Month Free Bug Fixes</li>
+                    </ul>
+                    <a href="https://wa.me/201055175073" target="_blank" rel="noopener" class="btn glass">Start Your Project</a>
+                </div>
+
+                <div class="plan pop glass lift reveal">
+                    <span class="badge">Most Popular</span>
+                    <div class="plan-icon"><i class="fa-brands fa-square-js"></i></div>
+                    <h3>Professional Website</h3>
+                    <p class="desc">Multi-page professional website built with Next.js and Tailwind CSS for modern businesses.</p>
+                    <div class="price grad">Starting From $150</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Up to 5 custom pages</li>
+                        <li><i class="fas fa-check"></i>Responsive Design (Mobile-Friendly)</li>
+                        <li><i class="fas fa-check"></i>Basic SEO setup</li>
+                        <li><i class="fas fa-check"></i>2 Month Free bug fixes</li>
+                    </ul>
+                    <a href="https://wa.me/201055175073" target="_blank" rel="noopener" class="btn btn-primary glass">Start Your Project</a>
+                </div>
+
+                <div class="plan glass lift reveal">
+                    <div class="plan-icon"><i class="fa-brands fa-react"></i></div>
+                    <h3>Advanced Web App</h3>
+                    <p class="desc">High-performance, scalable web app built with .NET, React.js and Tailwind CSS.</p>
+                    <div class="price grad">Starting From $250</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Up to 10 custom pages</li>
+                        <li><i class="fas fa-check"></i>Responsive Design (Mobile-Friendly)</li>
+                        <li><i class="fas fa-check"></i>Fully Customized Design</li>
+                        <li><i class="fas fa-check"></i>API and Database Integration</li>
+                        <li><i class="fas fa-check"></i>SEO-Friendly Structure</li>
+                        <li><i class="fas fa-check"></i>2 Month Free Bug Fixes</li>
+                    </ul>
+                    <a href="https://wa.me/201055175073" target="_blank" rel="noopener" class="btn glass">Start Your Project</a>
+                </div>
+
+                <div class="plan glass lift reveal">
+                    <div class="plan-icon"><i class="fa-brands fa-dev"></i></div>
+                    <h3>Custom Solution</h3>
+                    <p class="desc">Tailored solutions for businesses with advanced or unique requirements.</p>
+                    <div class="price grad">Starting From $400</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Custom Workflows &amp; Features</li>
+                        <li><i class="fas fa-check"></i>Advanced Integrations (APIs, Payments)</li>
+                        <li><i class="fas fa-check"></i>Multi-Language Support</li>
+                        <li><i class="fas fa-check"></i>E-commerce Ready</li>
+                        <li><i class="fas fa-check"></i>Fully Customized Design</li>
+                        <li><i class="fas fa-check"></i>5 Month Free Bug Fixes</li>
+                    </ul>
+                    <a href="https://wa.me/201055175073" target="_blank" rel="noopener" class="btn glass">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="wrap center">
+            <div class="sec-head reveal">
+                <h2>Let's <span class="grad">Connect</span></h2>
+                <p>Have a project in mind or want to discuss opportunities? I'm always open to talking about creative ideas and new projects.</p>
+            </div>
+
+            <div class="contact-grid reveal">
+                <div class="contact-card glass lift">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Location</h4>
+                    <p>6th October, Egypt</p>
+                </div>
+                <a href="mailto:ahmed.khaled2005.dev@gmail.com" class="contact-card glass lift">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p class="email">ahmed.khaled2005.dev@gmail.com</p>
+                </a>
+                <a href="https://wa.me/201055175073" target="_blank" rel="noopener" class="contact-card glass lift">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <p>+20 1055175073</p>
+                </a>
+            </div>
+
+            <div class="socials reveal">
+                <a href="https://github.com/A7MEDK7" target="_blank" rel="noopener" class="glass" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://t.me/A7MEDK2005" target="_blank" rel="noopener" class="glass" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-khaled-6b86042ab" target="_blank" rel="noopener" class="glass" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/201055175073" target="_blank" rel="noopener" class="glass" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <a href="mailto:ahmed.khaled2005.dev@gmail.com" class="btn btn-primary glass reveal">Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap glass">© 2026 Ahmed Khaled. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
